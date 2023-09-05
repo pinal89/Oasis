@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9fbe7;
+  position: relative;
+  background-image: url(/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: right center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: rgb(20, 20, 133);
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  padding: 15px 25px;
+  color: white;
+  font-size: 15px;
+}
+
+.sitename {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.main img {
+  height: 40px;
+  width: 80px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.menu li a:hover,
+.active {
+  background-color: #b1abab29;
+  font-weight: 700;
+  transition: all ease 0.4s;
+}
+
+.hero {
+  width: 650px;
+  position: absolute;
+  left: 10%;
+  top: 28%;
+  transition: translate(-10%, -33%);
+  line-height: 60px;
+}
+
+.hero p:nth-child(1),
+.hero .details {
+  color: #6c707c;
+  font-size: 20px;
+}
+
+.details {
+  line-height: 30px !important;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.hero span {
+  color: rgb(20, 20, 133);
+}
+
+.download {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 133);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.download:hover {
+  background-color: black;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: #000;
+}
+
+.heading span {
+  background-color: rgb(20, 20, 133);
+  color: #fff;
+  display: inline-flex;
+  padding: 0.5rem 3rem;
+  border-radius: 4px;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #000;
+  color: #000;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background-color: rgb(20, 20, 133);
+  color: #fff;
+  border: 2rem solid #fff;
+}
+
+.product {
+  margin: 100px;
+  margin-top: 0px;
+}
+
+.product .heading {
+  background-color: rgb(20, 20, 133);
+  color: white;
+}
+
+.product .product-slider {
+  padding: 1rem;
+}
+
+.product .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-area: 1.5rem;
+}
+
+.product .product-slider .box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s linear;
+}
+
+.product .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: 0.1rem solid #000;
+}
+
+.product .product-slider .box img {
+  height: 16rem;
+  width: 255px;
+}
+
+.product .product-slider .box h3 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.product .product-slider .box .price {
+  font-size: 2rem;
+  color: #666;
+  padding: 5rem 0;
+}
+
+.product .product-slider .box .price i {
+  font-size: 1, 7rem;
+  color: rgb(20, 20, 133);
+  padding: 0.5rem 0;
+}
+
+.product .product-slider .box .price button {
+  width: 200px;
+  height: 45px;
+  background-color: rgb(20, 20, 133);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product .product-slider .box .price button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer .share {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .share h3,
+.footer .contactus h3,
+.footer .aboutus h3 {
+  font-size: 1.7rem;
+  color: rgb(20, 20, 133);
+  padding: 5px;
+  margin: 5px;
+}
+
+.footer .share a,
+.footer .aboutus a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+}
+
+.footer .share a:hover,
+.footer .aboutus a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.footer .contactus {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .contactus form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  padding: 2px;
+}
+
+.footer .contactus form button{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(20, 20, 133);
+}
+
+.footer .contactus form button:hover{
+  cursor: pointer;
+  background-color: black;
+}
+
+.footer .aboutus {
+  display: flex;
+  flex-direction: column;
+}
